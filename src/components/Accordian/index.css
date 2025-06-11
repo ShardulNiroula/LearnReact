@@ -1,0 +1,86 @@
+.wrapper {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 16px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.accordian {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;
+    padding: 0;
+}
+
+.item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 18px 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+    user-select: none;
+}
+
+.title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.title span {
+    font-size: 1.5rem;
+    color: #888;
+    transition: transform 0.2s;
+}
+
+.content {
+    padding: 16px 24px;
+    background-color: white;
+    border-top: 1px solid #eee;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+    transition: all 0.2s ease-in-out;
+}
+
+.change-accordian-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.change-accordian-btn:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.change-accordian-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

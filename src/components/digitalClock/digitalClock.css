@@ -1,0 +1,43 @@
+/* Digital Clock Styles */
+
+.digital-clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.digital-clock-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+/* Clock display container */
+.digital-clock-container .Display {
+    background-color: #222;
+    padding: 20px 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff00;
+    font-family: 'Digital', 'Courier New', monospace;
+    min-width: 260px;
+}
+
+/* Time segments styling */
+.digital-clock-container .Hour, 
+.digital-clock-container .Minute, 
+.digital-clock-container .Second {
+    padding: 0 5px;
+    color: #00ff00;
+}

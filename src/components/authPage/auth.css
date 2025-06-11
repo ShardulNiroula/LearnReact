@@ -1,0 +1,132 @@
+/* Login and Signup shared styles */
+.Login, .Signup {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px 24px 24px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LoginHeader, .SignupHeader {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #2d3748;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s;
+  color: #222;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+  background: #fff;
+}
+
+.Submit {
+  width: 100%;
+  padding: 10px 0;
+  background: #3182ce;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.Submit:hover {
+  background: #2563eb;
+}
+
+.EmailError, .PasswordError, .NameError, .SubmitError {
+  color: #e53e3e;
+  font-size: 0.95rem;
+  min-height: 18px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.SignupDetails {
+  margin-top: 32px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 18px 16px;
+  color: #222;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  width: 100%;
+  max-width: 420px;
+}
+
+.SignupDetails h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.SignupDetails p {
+  font-size: 1rem;
+  margin: 4px 0;
+  color: #222;
+}
+
+.result {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: #f0f4ff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.resultMessage {
+    color: #2d5be3;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.detail {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 500px) {
+  .Login, .Signup {
+    max-width: 99vw;
+    padding: 18px 6vw;
+  }
+  .LoginHeader, .SignupHeader {
+    font-size: 1.4rem;
+  }
+}
