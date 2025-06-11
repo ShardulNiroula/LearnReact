@@ -6,6 +6,7 @@ import Form from './components/Forms/form';
 import ScrollToBottom from './components/ScrollToBottom/ScrollToBottom';
 import ScrollToTop from './components/ScrollToTop/scrollToTop';
 import StopWatch from './components/stopwatch/stopWatch';
+import TypeSpeedTester from './components/typeSpeed/speedTester';
 import './css/App.css'
 
 
@@ -41,6 +42,10 @@ function App() {
     <hr></hr>
     <div>
       <StopWatch />
+    </div>
+    <hr></hr>
+    <div>
+      <TypeSpeedTester />
     </div>
     
 
